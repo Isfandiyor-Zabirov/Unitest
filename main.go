@@ -31,7 +31,7 @@ func MeanValue(values []int) (int, float64) {
 func main() {
 
 	values := []int{4, 5, 1, 6, 9, 10, 32, 54, 12, 34}
-	//SumOFElements(values)
+	SumOFElements(values)
 	fmt.Println(MeanValue(values))
 
 }
