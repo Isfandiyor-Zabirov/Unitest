@@ -20,9 +20,14 @@ func MeanValue(values []int) (int, float64) {
 	for _, score := range values {
 		sumOfValues += score
 
+
 	}
 
-	meanValue := float64(sumOfValues) / float64(len(values))
+	lenOfValues := len(values)
+	if lenOfValues == 0 {
+		return 0, 0
+	}
+	meanValue := float64(sumOfValues) / float64(lenOfValues)
 
 	return sumOfValues, meanValue
 
